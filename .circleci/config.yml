@@ -2,10 +2,10 @@ version: 2
 
 jobs:
   build:
-    commands:
-      - chmod +x gradlew
-      - ./gradlew clean build --debug
-      - echo "A first hello from todo back end ..."
+    steps:
+      - run: chmod +x gradlew
+      - run: ./gradlew clean build --debug
+      - run: echo "A first hello from todo back end ..."
 artifacts:
   files:
     - ./build/libs/todo-back-end-0.0.1-SNAPSHOT.jar
