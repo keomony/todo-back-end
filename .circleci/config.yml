@@ -1,6 +1,6 @@
 version: 2
 
-phases:
+jobs:
   build:
     commands:
       - chmod +x gradlew
